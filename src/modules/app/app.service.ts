@@ -19,7 +19,7 @@ export class AppService {
 			}
 			return createResponse(HttpStatus.OK, messages.S5);
 		} catch (error) {
-			return createResponse(HttpStatus.INTERNAL_SERVER_ERROR, messages.E9);
+			return createResponse(HttpStatus.INTERNAL_SERVER_ERROR, messages.E9, error);
 		}
 	}
 }

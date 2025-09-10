@@ -61,8 +61,8 @@
 		"@types/regression": "^2.0.6",
 		"@types/request-ip": "^0.0.41",
 		"@types/supertest": "^6.0.2",
-		"@typescript-eslint/eslint-plugin": "^8.21.0",
-		"@typescript-eslint/parser": "^8.21.0",
+		"@typescript-eslint/eslint-plugin": "^8.43.0",
+		"@typescript-eslint/parser": "^8.43.0",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-prettier": "^5.2.3",
@@ -76,7 +76,8 @@
 		"ts-loader": "^9.5.2",
 		"ts-node": "^10.9.2",
 		"tsconfig-paths": "^4.2.0",
-		"typescript": "5.7.3"
+		"typescript": "5.7.3",
+		"typescript-eslint": "^8.43.0"
 	},
 	"jest": {
 		"moduleFileExtensions": [

@@ -18,12 +18,11 @@ class CommonRegExp {
 	public static readonly ALFA_NUMERIC_REGEX = /^[a-zA-Z0-9]*$/;
 	public static readonly ALFA_NUMERIC_WITH_SLASH_REGEX = /^[a-zA-Z0-9/-]*$/;
 	public static readonly VALIDATE_NON_PRINTABLE_CHARACTER = /[^\x20-\x7E]+/g;
-	public static readonly ALFA_NUMERIC_WITH_SOME_SPECIAL_REGEX = /^[a-zA-Z0-9\s@@.,_\-]+$/;
+	public static readonly ALFA_NUMERIC_WITH_SOME_SPECIAL_REGEX = /^[a-zA-Z0-9\s@@.,_\\-]+$/;
 	public static readonly CUSTOMER_DOMAIN_REGEX = /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+$/;
 	public static readonly year_month_regex = /^\d{4}-(0[1-9]|1[0-2])$/;
 	public static readonly year_month_day_regex = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
-	// public static readonly description_regex = /^(?!.*[<>])/;
-	public static readonly description_regex = /^[^<>\\?'"+\(\)\{\}\[\]\-\*/&|^<>=!#;:;\0`-]+$/;
+	public static readonly description_regex = /^[^<>\\?'"+\\(\\)\\{\\}\\[\]\-\\*/&|^<>=!#;:;\0`-]+$/;
 	public static readonly noSpaceStart = /^[\w@]+/;
 	public static readonly DATE_TIME_OFFSET_REGEXP = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?[+-]\d{2}:\d{2}$/;
 	public static readonly PASSWORD_REGEX = /(?=^.{8,16}$)(?=.*\d)(?=.*[!@#$%^&*?]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
