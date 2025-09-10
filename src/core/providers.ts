@@ -19,7 +19,7 @@ const getProviders = (): any[] => {
 		];
 	},
 	importProviders = (): any[] => {
-		return [ConfigModule.forRoot({ envFilePath: '.env.dev' }), DatabaseModule];
+		return [ConfigModule.forRoot({ envFilePath: '.env.prod' }), DatabaseModule];
 	},
 	exportProviders = (): any[] => {
 		return [AppConfigService, AppLogger, DatabaseModule];
